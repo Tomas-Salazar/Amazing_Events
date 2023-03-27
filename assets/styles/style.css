@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #351858;
+    height: 10vh;
+}   
+
+.nava{
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid black;
+    color: #EC058E;
+}
+
+.logo1{
+    width: 10rem;
+}
+
+.carra{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    background-color: #631366;
+}
+
+label{
+    color: white;
+}
+
+.card{
+    background-color: #EC058E;
+    color: white;
+    text-align: center;
+    margin: 1rem;
+}
+
+.price{
+    background-color: #be0a81;
+}
+
+footer{
+    background-color: #EC058E;
+}
+
+.logo2{
+    width: 3rem;
+}
+
+.img_card{
+    height: 10rem;
+    padding: 1rem;
+}
+
+.form-cont{
+    width: 40vw;
+}
+
+.main-cont{
+    height: 70vh;
+}
+
+
+.collapse{
+    z-index: 1;
+}
+
+.main-stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #351858d0;
+    padding: 5rem;
+}
+
+table{
+    text-align: left;
+    border: 5px double rgba(255, 255, 255, 0.718);
+    height: 100%;
+    width: 100%;
+}
+
+th{
+    background-color: #822B99;
+    padding: 0.2rem;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+td{
+    background-color: #ec059084;
+    padding: 0.2rem;
+    border: 1px solid black;
+    color: white;
+}
+
+/* .main-det{
+    padding: 5rem;
+}
+
+.div-det{
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    background-color: #351858d0;
+}
+
+.img-det, .div-det2{
+    width: 50%;
+    padding: 2rem;
+    border: 3px solid white;
+    margin: 1rem;
+    background-color: #ec0590b2;
+}
+
+.div-det2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+} */
+
+.main-det{
+    min-height: 81vh;
+}
+
+.div-det2{
+    color: white;
+    text-align: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-det, .div-det2{
+    border: 3px solid white;
+    padding: 3rem;
+    background-color: #351858;
+    height: 30rem;
+}
+
+.div-det{
+    min-height: 81vh;
+}
