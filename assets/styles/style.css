@@ -62,7 +62,7 @@ footer{
 }
 
 .main-cont{
-    height: 71vh;
+    min-height: 82vh;
 }
 
 
