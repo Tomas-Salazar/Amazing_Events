@@ -6,7 +6,7 @@
 
 nav{
     background-color: #351858;
-    height: 10vh;
+    min-height: 10vh;
 }   
 
 .nava{
@@ -62,13 +62,9 @@ footer{
 }
 
 .main-cont{
-    height: 70vh;
+    height: 71vh;
 }
 
-
-.collapse{
-    z-index: 1;
-}
 
 .main-stats{
     display: flex;
@@ -101,35 +97,6 @@ td{
     color: white;
 }
 
-/* .main-det{
-    padding: 5rem;
-}
-
-.div-det{
-    border: 3px solid white;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    padding: 2rem;
-    background-color: #351858d0;
-}
-
-.img-det, .div-det2{
-    width: 50%;
-    padding: 2rem;
-    border: 3px solid white;
-    margin: 1rem;
-    background-color: #ec0590b2;
-}
-
-.div-det2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    color: white;
-} */
 
 .main-det{
     min-height: 81vh;
@@ -151,5 +118,5 @@ td{
 }
 
 .div-det{
-    min-height: 81vh;
+    min-height: 82vh;
 }
