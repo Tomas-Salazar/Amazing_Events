@@ -61,9 +61,6 @@ footer{
     width: 40vw;
 }
 
-.main-cont{
-    min-height: 82vh;
-}
 
 
 .main-stats{
@@ -98,10 +95,6 @@ td{
 }
 
 
-.main-det{
-    min-height: 81vh;
-}
-
 .div-det2{
     color: white;
     text-align: center;
@@ -117,6 +110,6 @@ td{
     height: 30rem;
 }
 
-.div-det{
+.div-det, .main-det, .main-cont, .main-index{
     min-height: 82vh;
 }
