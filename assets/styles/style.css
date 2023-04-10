@@ -44,8 +44,9 @@ label{
     background-color: #be0a81;
 }
 
-footer{
+footer, header{
     background-color: #EC058E;
+    min-height: 10vh;
 }
 
 .logo2{
@@ -107,9 +108,20 @@ td{
     border: 3px solid white;
     padding: 3rem;
     background-color: #351858;
-    height: 30rem;
+    height: 70vh;
 }
 
 .div-det, .main-det, .main-cont, .main-index{
     min-height: 82vh;
+}
+
+#ahome, #aupco, #apast, #acont, #adet, #astats{
+    background-color: #EC058E;
+    color: white;
+}
+
+.sinEventos{
+    display: flex;
+    justify-content: center;
+    color: white;
 }
