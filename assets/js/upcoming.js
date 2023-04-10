@@ -44,7 +44,7 @@ contenedorCartas.innerHTML = template
 let buscador = document.getElementById("buscador")
 let contenedorChecks = document.getElementById("contenedorChecks")
 
-let categorias = eventosTodos.map (evento => evento.category)
+let categorias = eventosFiltrados1.map (evento => evento.category)
 /* console.log(categorias) */
 let categoriasFiltrado = new Set (categorias)
 let categoriasFinal = Array.from(categoriasFiltrado)
@@ -64,7 +64,7 @@ function imprimirCategorias(array, contenedor){
 contenedorChecks.addEventListener("change", (e) => {
     let arrayCategorias = Array.from( document.querySelectorAll('input[type="checkbox"]:checked') ).map(cat => cat.name)
     /* console.log(arrayCategorias) */
-    let filtro = filtrarPorCategoria(eventosTodos, arrayCategorias)
+    let filtro = filtrarPorCategoria(eventosFiltrados1, arrayCategorias)
     let resultados = buscadorDeTexto(filtro, buscador.value)
     imprimirEventos(resultados)
 })
@@ -72,7 +72,7 @@ contenedorChecks.addEventListener("change", (e) => {
 buscador.addEventListener("input", (e) => {
     let arrayCategorias = Array.from( document.querySelectorAll('input[type="checkbox"]:checked') ).map(cat => cat.name)
     /* console.log(arrayCategorias) */
-    let filtro = filtrarPorCategoria(eventosTodos, arrayCategorias)
+    let filtro = filtrarPorCategoria(eventosFiltrados1, arrayCategorias)
     let resultados = buscadorDeTexto(filtro, buscador.value)
     imprimirEventos(resultados)
 })

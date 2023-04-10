@@ -66,7 +66,7 @@ contenedorChecks.addEventListener("change", (e) => {
     /* console.log(arrayCategorias) */
     let filtro = filtrarPorCategoria(eventosFiltrados2, arrayCategorias)
     let resultados = buscadorDeTexto(filtro, buscador.value)
-    (resultados)
+    imprimirEventos(resultados)
 })
 
 buscador.addEventListener("input", (e) => {
@@ -74,7 +74,7 @@ buscador.addEventListener("input", (e) => {
     /* console.log(arrayCategorias) */
     let filtro = filtrarPorCategoria(eventosFiltrados2, arrayCategorias)
     let resultados = buscadorDeTexto(filtro, buscador.value)
-    (resultados)
+    imprimirEventos(resultados)
 })
 
 function filtrarPorCategoria(array, categorias){
@@ -94,13 +94,9 @@ function buscadorDeTexto(array, texto){
     }
 }
 
-
-
-
-
 function imprimirEventos(parametro){
     if (parametro.length === 0){
-        contenedorCartas.innerHTML = "No hay eventos";
+        contenedorCartas.innerHTML = '<h1 class"sinEventos">No hay eventos</h1>';
     }else{
         let nota = parametro.map(crearDiv)
         contenedorCartas.innerHTML = nota;
