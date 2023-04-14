@@ -15,13 +15,8 @@ fetch(url)
 
         let template = ""
 
-        const fechaHoy = data.currentDate
-
-        const eventosFiltrados2 = []
-        for (let evento of eventosTodos)
-            if (fechaHoy > evento.date){
-            eventosFiltrados2.push(evento);
-        }
+        let eventosFiltrados2 = eventosTodos.filter( elemento => elemento.date < data.currentDate )
+        /* console.log(eventosFiltrados2) */
 
         for (let evento of eventosFiltrados2){
             template += crearDiv(evento, urlDetails); 

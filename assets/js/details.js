@@ -24,6 +24,7 @@ console.log(eventosFiltrados)
 
 pintarEvento(eventosFiltrados, contenedorCartas)
     } )
+    
     .catch( err => console.log(err) )
 
 

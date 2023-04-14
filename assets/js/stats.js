@@ -26,9 +26,9 @@ function imprimirTabla(){
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="color-dark">Events with the highest percentage of attendance</td>
-                                <td>Events with the lowest percentage of attendance</td>
-                                <td>Event with larger capacity</td>
+                                <td class = "fw-bold">Events with the highest percentage of attendance</td>
+                                <td class = "fw-bold">Events with the lowest percentage of attendance</td>
+                                <td class = "fw-bold">Event with larger capacity</td>
                             </tr>
                             <tr>
                                 <td>${calcularEventoMayorAsistencia(eventosPasados)}</td>
@@ -43,9 +43,9 @@ function imprimirTabla(){
                             </tr>
                         </thead>
                         <tr>
-                            <td>Categories</td>
-                            <td>Revenues</td>
-                            <td>Percentage of attendance</td>
+                            <td class = "fw-bold">Categories</td>
+                            <td class = "fw-bold">Revenues</td>
+                            <td class = "fw-bold">Percentage of attendance</td>
                         </tr>
                         <tbody id="eventos-futuros">
 
@@ -57,9 +57,9 @@ function imprimirTabla(){
                             </tr>
                         </thead>
                         <tr>
-                            <td>Categories</td>
-                            <td>Revenues</td>
-                            <td>Percentage of attendance</td>
+                            <td class = "fw-bold">Categories</td>
+                            <td class = "fw-bold">Revenues</td>
+                            <td class = "fw-bold">Percentage of attendance</td>
                         </tr>
                         <tbody id="eventos-pasados">
 
@@ -72,11 +72,11 @@ function imprimirTabla(){
 let estadisticas;
 
 function estadisticasTodas(array){
-    estadisticas = array.map( (e) => {
+    estadisticas = array.map( (elemento) => {
         return{
-            categoria : e.category,
-            revenues : e.price * (e.assistance ? e.assistance : e.estimate),
-            porcentajeAsist : (e.assistance ? e.assistance : e.estimate) * 100 / e.capacity
+            categoria : elemento.category,
+            revenues : elemento.price * (elemento.assistance ? elemento.assistance : elemento.estimate),
+            porcentajeAsist : (elemento.assistance ? elemento.assistance : elemento.estimate) * 100 / elemento.capacity
         }
     })
     return estadisticas
@@ -130,6 +130,9 @@ imprimirTablitas(estadisticasFinalPasados, contenedorTablaPasados)
 
 } )
     .catch( err => console.log(err) )
+
+
+
 
 function calcularEventoMayorAsistencia(data) {
         let mayorPorcentajeAsistencia = 0;
