@@ -3,6 +3,7 @@ import {crearDiv, imprimirCategorias, filtrarPorCategoria, buscadorDeTexto, impr
 const contenedorCartas = document.getElementById("contenedor-cartas")
 let buscador = document.getElementById("buscador")
 let contenedorChecks = document.getElementById("contenedorChecks")
+let urlDetails = "./details.html"
 
 let url = "https://mindhub-xj03.onrender.com/api/amazing"
 fetch(url)
@@ -24,7 +25,7 @@ fetch(url)
         }
 
         for (let evento of eventosFiltrados1){
-            template += crearDiv(evento); 
+            template += crearDiv(evento, urlDetails); 
         }
         contenedorCartas.innerHTML = template
 

@@ -1,4 +1,4 @@
-export function crearDiv (eventosTodos){
+export function crearDiv (eventosTodos, url){
     return `<div class="card d-flex justify-content-center m-2" style="width: 18rem;">
                 <img src="${eventosTodos.image}" class="card-img-top img_card" alt="collectivities">
                 <div class="card-body d-flex flex-column justify-content-center">
@@ -6,7 +6,7 @@ export function crearDiv (eventosTodos){
                     <p class="card-text">${eventosTodos.description}</p>
                     <div class="d-flex flex-row justify-content-between">
                         <p class="price">Price: $${eventosTodos.price}</p>
-                        <a href="./assets/pages/details.html?id=${eventosTodos._id}" class="btn btn-light">More Details</a>
+                        <a href="${url}?id=${eventosTodos._id}" class="btn btn-light">More Details</a>
                     </div>
                 </div>
             </div> `
